@@ -1,0 +1,347 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+header{
+    display: flex;
+    background-color: #0047BE;
+    height: 110px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+h2{
+    margin-top: 60px;
+}
+/* -----------------------------LOGO----------------------------- */
+.logo img{
+    height: 55px;
+    width:80px ;
+}
+.logo{
+
+    margin: 28px 25px 0px 270px;
+    float: left;
+}
+
+
+/* -------------------------------------SEARCH BAR-------------------------------- */
+#headerForm{
+    display: flex;
+    flex: 2;
+    
+}
+#search{
+
+    border: 1px solid white;
+    border-radius: 2px 0px 0px 2px;
+    color: grey;
+    font-weight: normal;
+    margin-top:30px ;
+    width: 400px;
+    height: 45px;
+    padding: 14px;
+    
+}
+#search:focus{
+    outline: none;
+}
+
+#svgSearch{
+    /* position: relative;
+    top: 18px; */
+    background-color: white;
+    fill:  #0047BE;
+    height: 45px;
+    width: 32px;
+    margin-left: -3px;
+    margin-top:30px ;
+    border: 0px 2px 0px 2px;
+    
+    
+}
+
+
+/* img{
+    padding: 0px;
+    height: 46.5px;
+    border: 0ch;
+    border-radius: 0px 2px 2px 0px;
+} */
+
+
+/* -------------------------------------------SIDE MENU--------------------------------- */
+#sideMenu{
+    flex: 2;
+    display: flex;
+    flex-direction: column;   
+    margin-left: 50px;
+    justify-content:flex-end
+}
+
+li{
+    list-style-type: none; 
+    display: inline;
+    word-spacing: 2px;    
+}
+.ul a {
+    text-decoration: none;
+    color: white;
+}
+.ul-1{
+    font-size: 13px;
+    margin-right: 5px;
+}
+.ul-1 a{
+    margin-right: 11px;
+}
+.ul-1 a:hover{
+    text-decoration: underline;
+}
+.ul-2{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+    
+}
+.ul-2 a{
+    margin-top: 4px;
+    margin-right: 20px;
+}
+.ul-2 a:hover{
+color: #f6eb16;
+}
+.ul-2 svg:hover{
+   fill: #f6eb16; 
+}
+
+
+/* ------------------------------------NAV------------------------------ */
+
+nav{
+    display: flex;
+    background-color: #003DA6;
+    
+
+}
+nav svg{
+    fill: white;
+    height: 20px;
+    width: 20px;
+   
+}
+
+/* #navForm{
+    display: none;
+} */
+#navSearch{
+    display: none;
+}
+#svgFormIcon{
+    display: none;
+}
+
+#toggle-button{
+    display: none;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+   
+   
+}
+nav ul{
+    margin-left: 235px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    flex: 2;
+}
+
+section{
+    width: 100%;
+    text-align: center;
+}
+section h2{
+    font-weight: bolder;
+}
+
+
+/* ---------cards----------- */
+
+.cardHolder{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+   
+}
+.cardHolder svg{
+    height: 16px;
+    width: 16px;
+    fill: #0047BE;
+}
+.cards{
+    box-shadow: 2px 2px 2px 2px white;
+    width: 280px;
+    height: 300px;
+    margin: 10px 20px;
+
+}
+.cards button{
+    text-decoration: none;
+    background: none;
+    border:none;
+    color: #0047BE;
+    font-weight:bold ;
+    
+}
+.cards button:hover{
+    text-decoration: underline;
+}
+.cardContent{
+    text-align: left;
+    padding: 4px;
+}
+.cardHeading{
+    margin: 7px 0px;
+    display: block;
+}
+.cards img{
+    width: 100%;
+    height: 170px;
+    background-size: cover;
+}
+
+
+/* -------------------MEDIA QUERY----------------------------------------- */
+@media (max-width:480px){
+  
+    header{
+        
+        background-color: #0047BE;
+        height: 60px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #headerForm{
+        display: none;
+    }
+    #sideMenu .ul-1{
+        display: none;
+    }
+    .logo {
+        margin: 10px 8px;
+    }
+
+    .logo img{
+        height: 50px;
+        width:80px ;
+    }
+    .txt{
+        display: none;
+    }
+    
+    .ul-2 svg{
+        height: 28px;
+        width:28px;
+    }
+    .ul-2{
+        justify-content: space-between;
+        margin-left: 5px;
+        align-self: flex-end;   
+    }
+
+
+
+    /* -------------navigation------------- */
+    
+    nav{
+        display: flex;
+        height: 60px;
+        width: 100%;
+        /* flex-wrap: wrap; */
+    }
+
+    nav ul{
+        display: none;
+    }
+    .navigationBar{
+        display: none;
+    }
+    /* nav form[type="Search"]{
+        
+        display: flex;
+    } */
+    #navForm{
+        display: flex;
+        /* margin-top: -18px; */
+        flex: 2;
+    }
+
+    #navSearch{
+        display:inline;
+        border: 1px solid white;
+        border-radius: 2px 0px 0px 2px;
+        color: grey;
+        font-weight: normal;
+        margin-top: 8px;
+        width: 90%;
+        height: 44px;
+        padding: 12px;
+        
+    }
+    #navSearch:focus{
+        outline: none;
+    }
+  
+    #svgFormIcon{
+     
+        display: inline-block;
+        fill: #0047BE;
+        background-color:white;
+        margin-top: 8px;
+        height: 44px;
+        margin-left: -10px;
+        border-radius: 0px 2px 2px 0px;
+    }
+
+    #toggle-button{
+        
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+        height: 20px;
+        margin: 24px 0px 24px 20px; 
+       }
+    .toggleMenu{
+        height: 2px;
+        margin-bottom: 5px;
+        width: 50%;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+
+
+    /* --------------------------CARDS------------------------- */
+    .cardHolder{
+        flex-wrap: nowrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+       
+    }
+    .cards{
+        width: unset;
+   }
+   
+  
+    
+}
+
+
+
